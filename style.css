@@ -30,10 +30,9 @@ input {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
-  box-sizing: border-box; /* Évite que les inputs dépassent des cartes */
+  box-sizing: border-box;
 }
 
-/* Style de base des boutons et animations */
 button {
   width: 100%;
   padding: 10px;
@@ -49,7 +48,7 @@ button:hover {
 }
 
 button:active {
-  transform: scale(0.98); /* Effet d'enfoncement au clic */
+  transform: scale(0.98);
 }
 
 footer {
@@ -58,7 +57,6 @@ footer {
   margin-top: 20px;
 }
 
-/* Style pour la navigation intégrée au header */
 .nav-links {
   margin-top: 15px;
 }
@@ -74,7 +72,6 @@ footer {
   text-decoration: underline;
 }
 
-/* Style pour le bandeau de cookies */
 .cookie-banner {
   position: fixed;
   bottom: 20px;
@@ -112,23 +109,21 @@ footer {
   text-decoration: underline;
 }
 
-/* Style pour embellir TOUS les affichages de résultats (Vert) */
 #salaryResult, #interestResult, #budgetResult, #savingsResult {
   margin-top: 15px;
   padding: 10px;
-  background-color: #f0fdf4; /* Fond vert très clair */
-  border-left: 4px solid #16a34a; /* Ligne verte sur le côté */
-  color: #166534; /* Texte vert foncé */
+  background-color: #f0fdf4;
+  border-left: 4px solid #16a34a;
+  color: #166534;
   font-weight: bold;
   border-radius: 4px;
   text-align: center;
 }
 
-/* Cache les boîtes de résultats tant qu'elles sont vides */
 #salaryResult:empty, #interestResult:empty, #budgetResult:empty, #savingsResult:empty {
   display: none;
 }
-/* Style pour les textes explicatifs SEO */
+
 .seo-intro {
   text-align: center;
   max-width: 800px;
@@ -136,30 +131,8 @@ footer {
   padding: 0 20px;
 }
 
-.seo-intro h2 {
-  color: #2563eb;
-}
-
-.seo-intro p {
-  color: #555;
-  line-height: 1.6;
-}
-
-.seo-text {
-  margin-top: 20px;
-  border-top: 1px solid #eee;
-  padding-top: 15px;
-}
-
-.seo-text h3 {
-  font-size: 1.1rem;
-  color: #333;
-  margin-bottom: 8px;
-}
-
-.seo-text p {
-  font-size: 0.9rem;
-  color: #666;
-  line-height: 1.5;
-  margin: 0;
-}
+.seo-intro h2 { color: #2563eb; }
+.seo-intro p { color: #555; line-height: 1.6; }
+.seo-text { margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px; }
+.seo-text h3 { font-size: 1.1rem; color: #333; margin-bottom: 8px; }
+.seo-text p { font-size: 0.9rem; color: #666; line-height: 1.5; margin: 0; }
