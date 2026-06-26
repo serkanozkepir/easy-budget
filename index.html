@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EasyBudget - Outils financiers gratuits</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>💰 EasyBudget</h1>
+  <p>Des outils simples pour gérer ton argent</p>
+</header>
+
+<section class="grid">
+
+  <div class="card">
+    <h2>Calcul salaire net</h2>
+    <input id="salary" type="number" placeholder="Salaire brut €">
+    <button onclick="calcSalary()">Calculer</button>
+    <p id="salaryResult"></p>
+  </div>
+
+  <div class="card">
+    <h2>Intérêts composés</h2>
+    <input id="capital" type="number" placeholder="Capital €">
+    <input id="rate" type="number" placeholder="Taux %">
+    <input id="years" type="number" placeholder="Années">
+    <button onclick="calcInterest()">Calculer</button>
+    <p id="interestResult"></p>
+  </div>
+
+  <div class="card">
+    <h2>Budget mensuel</h2>
+    <input id="income" type="number" placeholder="Revenus €">
+    <input id="expenses" type="number" placeholder="Dépenses €">
+    <button onclick="calcBudget()">Calculer</button>
+    <p id="budgetResult"></p>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 EasyBudget - Tous droits réservés</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
