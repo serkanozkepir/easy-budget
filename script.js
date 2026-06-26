@@ -47,3 +47,12 @@ function refuseCookies() {
   localStorage.setItem("cookieConsent", "refused");
   document.getElementById("cookie-banner").style.display = "none";
 }
+function calcSavingsGoal() {
+  let monthly = parseFloat(document.getElementById("monthlySave").value) || 0;
+  let duration = parseInt(document.getElementById("months").value) || 0;
+
+  let totalSaved = monthly * duration;
+
+  document.getElementById("savingsResult").innerText =
+    "Épargne totale cumulée : " + totalSaved.toFixed(2) + " €";
+}
