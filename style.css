@@ -128,3 +128,38 @@ footer {
 #salaryResult:empty, #interestResult:empty, #budgetResult:empty, #savingsResult:empty {
   display: none;
 }
+/* Style pour les textes explicatifs SEO */
+.seo-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 30px auto 10px auto;
+  padding: 0 20px;
+}
+
+.seo-intro h2 {
+  color: #2563eb;
+}
+
+.seo-intro p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.seo-text {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.seo-text h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.seo-text p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
