@@ -97,3 +97,19 @@ footer {
   font-size: 0.9rem;
   text-decoration: none;
 }
+/* Style pour embellir l'affichage des résultats */
+#salaryResult, #interestResult, #budgetResult {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f0fdf4; /* Fond vert très clair */
+  border-left: 4px solid #16a34a; /* Ligne verte sur le côté */
+  color: #166534; /* Texte vert foncé */
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Si le résultat est vide au début, on garde un espace propre */
+#salaryResult:empty, #interestResult:empty, #budgetResult:empty {
+  display: none;
+}
