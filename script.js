@@ -56,3 +56,27 @@ function calcSavingsGoal() {
   document.getElementById("savingsResult").innerText =
     "Épargne totale cumulée : " + totalSaved.toFixed(2) + " €";
 }
+/* Animation au survol des boutons */
+button {
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:active {
+  transform: scale(0.98); /* Légère impression d'enfoncement au clic */
+}
+
+/* Style de base pour la nouvelle boîte de résultat épargne */
+#savingsResult {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f0fdf4;
+  border-left: 4px solid #16a34a;
+  color: #166534;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+}
+
+#savingsResult:empty {
+  display: none;
+}
