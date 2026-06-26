@@ -3,20 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mon Easy Budget - Outils financiers gratuits</title>
+  <title>EasyBudget - Outils financiers gratuits</title>
   <link rel="stylesheet" href="style.css">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3558812705822681"
+     crossorigin="anonymous"></script>
 </head>
 <body>
 
 <header>
-  <h1>💰 Mon Easy Budget</h1>
+  <h1>💰 EasyBudget</h1>
   <p>Des outils simples pour gérer ton argent</p>
-  <nav style="margin-top: 15px;">
-    <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none;">Accueil</a> | 
-    <a href="about.html" style="color: white; margin: 0 10px; text-decoration: none;">À propos</a> | 
-    <a href="contact.html" style="color: white; margin: 0 10px; text-decoration: none;">Contact</a> | 
-    <a href="privacy.html" style="color: white; margin: 0 10px; text-decoration: none;">Confidentialité</a> | 
-    <a href="mentions-legales.html" style="color: white; margin: 0 10px; text-decoration: none;">Mentions légales</a>
+  
+  <nav class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="about.html">À propos</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Confidentialité</a>
+    <a href="mentions-legales.html">Mentions légales</a>
   </nav>
 </header>
 
@@ -24,40 +28,32 @@
 
   <div class="card">
     <h2>Calcul salaire net</h2>
-    <input id="salary" type="number" placeholder="Salaire brut €">
+    <input id="salary" type="number" min="0" placeholder="Salaire brut €">
     <button onclick="calcSalary()">Calculer</button>
     <p id="salaryResult"></p>
   </div>
 
   <div class="card">
     <h2>Intérêts composés</h2>
-    <input id="capital" type="number" placeholder="Capital €">
-    <input id="rate" type="number" placeholder="Taux %">
-    <input id="years" type="number" placeholder="Années">
+    <input id="capital" type="number" min="0" placeholder="Capital €">
+    <input id="rate" type="number" min="0" placeholder="Taux %">
+    <input id="years" type="number" min="0" placeholder="Années">
     <button onclick="calcInterest()">Calculer</button>
     <p id="interestResult"></p>
   </div>
 
   <div class="card">
     <h2>Budget mensuel</h2>
-    <input id="income" type="number" placeholder="Revenus €">
-    <input id="expenses" type="number" placeholder="Dépenses €">
+    <input id="income" type="number" min="0" placeholder="Revenus €">
+    <input id="expenses" type="number" min="0" placeholder="Dépenses €">
     <button onclick="calcBudget()">Calculer</button>
     <p id="budgetResult"></p>
   </div>
 
 </section>
 
-<section class="card" style="margin: 20px; padding: 25px;">
-  <h2>Pourquoi bien gérer son budget avec Mon Easy Budget ?</h2>
-  <p>Prendre le contrôle de ses finances personnelles est essentiel pour concrétiser ses projets d'avenir. Grâce à nos simulateurs gratuits, vous pouvez calculer votre solde mensuel en un clic et anticiper vos dépenses régulières.</p>
-  
-  <h3>Comment utiliser nos calculateurs ?</h3>
-  <p>Notre outil de <strong>calcul de salaire net</strong> vous permet de convertir rapidement votre salaire brut en net afin de connaître votre revenu réel. Le simulateur d'<strong>intérêts composés</strong> est idéal pour planifier votre épargne à long terme et observer l'impact du temps sur votre capital. Enfin, notre outil de <strong>budget mensuel</strong> vous offre une vision claire entre vos revenus et vos charges pour éviter les mauvaises surprises en fin de mois.</p>
-</section>
-
 <footer>
-  <p>© 2026 Mon Easy Budget - Tous droits réservés</p>
+  <p>© 2026 EasyBudget - Tous droits réservés</p>
 </footer>
 
 <script src="script.js"></script>
