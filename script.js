@@ -17,10 +17,15 @@ function calcInterest() {
 }
 
 function calcBudget() {
-  let income = document.getElementById("income").value;
-  let expenses = document.getElementById("expenses").value;
+  let income = parseFloat(document.getElementById("income").value) || 0;
+  let expenses = parseFloat(document.getElementById("expenses").value) || 0;
 
   let balance = income - expenses;
+
+  // Utilisation de .toFixed(2) pour afficher un beau montant propre
+  document.getElementById("budgetResult").innerText =
+    "Solde : " + balance.toFixed(2) + " €";
+}
 
   document.getElementById("budgetResult").innerText =
     "Solde : " + balance + " €";
