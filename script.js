@@ -25,3 +25,20 @@ function calcBudget() {
   document.getElementById("budgetResult").innerText =
     "Solde : " + balance + " €";
 }
+// Vérifie si l'utilisateur a déjà fait un choix
+window.onload = function() {
+  if (localStorage.getItem("cookieConsent")) {
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+}
+
+function acceptCookies() {
+  localStorage.setItem("cookieConsent", "accepted");
+  document.getElementById("cookie-banner").style.display = "none";
+  // Ici, tu peux charger AdSense si tu veux être 100% strict
+}
+
+function refuseCookies() {
+  localStorage.setItem("cookieConsent", "refused");
+  document.getElementById("cookie-banner").style.display = "none";
+}
