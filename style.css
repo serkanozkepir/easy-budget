@@ -50,3 +50,18 @@ footer {
   padding: 20px;
   margin-top: 20px;
 }
+/* Style pour la navigation intégrée au header */
+.nav-links {
+  margin-top: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
