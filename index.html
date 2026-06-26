@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EasyBudget - Outils financiers gratuits</title>
+  
+  <meta name="description" content="Calculez facilement votre salaire net, simulez vos intérêts composés et optimisez votre budget mensuel grâce à nos outils financiers gratuits et rapides.">
+  
   <link rel="stylesheet" href="style.css">
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3558812705822681"
@@ -24,6 +27,11 @@
   </nav>
 </header>
 
+<section class="seo-intro">
+  <h2>Optimisez vos finances personnelles gratuitement</h2>
+  <p>Bienvenue sur <strong>EasyBudget</strong>, votre plateforme d'outils financiers en ligne. Que vous souhaitiez anticiper vos revenus, calculer la rentabilité d'un investissement ou suivre vos dépenses au quotidien, nos calculateurs simples et rapides vous aident à prendre les bonnes décisions pour votre argent.</p>
+</section>
+
 <section class="grid">
 
   <div class="card">
@@ -31,6 +39,11 @@
     <input id="salary" type="number" min="0" placeholder="Salaire brut €">
     <button onclick="calcSalary()">Calculer</button>
     <p id="salaryResult"></p>
+    
+    <div class="seo-text">
+      <h3>Comment passer du brut au net ?</h3>
+      <p>Pour estimer votre salaire net, notre outil déduit environ 22% à 25% de cotisations sociales de votre salaire brut. C'est l'outil idéal pour préparer une négociation d'embauche ou un entretien annuel.</p>
+    </div>
   </div>
 
   <div class="card">
@@ -40,6 +53,11 @@
     <input id="years" type="number" min="0" placeholder="Années">
     <button onclick="calcInterest()">Calculer</button>
     <p id="interestResult"></p>
+    
+    <div class="seo-text">
+      <h3>Le pouvoir des intérêts composés</h3>
+      <p>Les intérêts composés génèrent des intérêts qui produisent à leur tour des intérêts. Utilisez ce simulateur d'épargne à long terme pour planifier vos investissements (Bourse, livrets, assurance-vie).</p>
+    </div>
   </div>
 
   <div class="card">
@@ -48,14 +66,26 @@
     <input id="expenses" type="number" min="0" placeholder="Dépenses €">
     <button onclick="calcBudget()">Calculer</button>
     <p id="budgetResult"></p>
+    
+    <div class="seo-text">
+      <h3>Calculer son reste à vivre</h3>
+      <p>Maîtriser son budget mensuel est la clé de la liberté financière. En soustrayant vos charges fixes et variables de vos revenus totaux, vous découvrez instantanément votre capacité d'épargne.</p>
+    </div>
   </div>
-<div class="card">
-  <h2>Objectif Épargne</h2>
-  <input id="monthlySave" type="number" min="0" placeholder="Épargne mensuelle €">
-  <input id="months" type="number" min="0" placeholder="Nombre de mois">
-  <button onclick="calcSavingsGoal()">Calculer</button>
-  <p id="savingsResult"></p>
-</div>
+
+  <div class="card">
+    <h2>Objectif Épargne</h2>
+    <input id="monthlySave" type="number" min="0" placeholder="Épargne mensuelle €">
+    <input id="months" type="number" min="0" placeholder="Nombre de mois">
+    <button onclick="calcSavingsGoal()">Calculer</button>
+    <p id="savingsResult"></p>
+    
+    <div class="seo-text">
+      <h3>Simulateur de projet financier</h3>
+      <p>Vous avez un projet en tête (achat auto, vacances, apport immobilier) ? Calculez combien de temps et combien d'argent mettre de côté chaque mois pour atteindre votre objectif sans effort.</p>
+    </div>
+  </div>
+
 </section>
 
 <footer>
